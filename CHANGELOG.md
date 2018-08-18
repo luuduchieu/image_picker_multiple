@@ -1,3 +1,7 @@
+## 0.4.8
+
+* Update document
+
 ## 0.4.7
 
 * Added support for multiple image picker on android

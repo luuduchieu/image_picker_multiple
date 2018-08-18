@@ -11,6 +11,8 @@ and taking new pictures with the camera.
 
 First, add `multiple_image_picker` as a [dependency in your pubspec.yaml file](https://flutter.io/platform-plugins/).
 
+multiple_image_picker: 0.4.8
+
 ## Warning
 
 This package is fork from flutter package by Google.
@@ -42,7 +44,7 @@ class _MyHomePageState extends State<MyHomePage> {
   File _image;
 
   Future getImage() async {
-    var image = await ImagePicker.pickImage(source: ImageSource.camera);
+    var image = await ImagePicker.pickImage(source: ImageSource.camera, numberOfItems: 1);
 
     setState(() {
       _image = image;
